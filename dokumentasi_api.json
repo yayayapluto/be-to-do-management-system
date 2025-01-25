@@ -63,11 +63,20 @@
 					"response": []
 				},
 				{
-					"name": "delete",
+					"name": "soft-delete",
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{base_url}}:{{port}}/users/4"
+						"url": "{{base_url}}:{{port}}/users/9"
+					},
+					"response": []
+				},
+				{
+					"name": "perm-delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/users/del/7"
 					},
 					"response": []
 				}
