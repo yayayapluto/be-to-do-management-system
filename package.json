@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "nodemon ./bin/www",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "prepare": "husky"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -17,6 +18,10 @@
     "pg": "^8.13.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "lint-staged": "^15.4.2",
     "nodemon": "^3.1.9"
   }
 }
