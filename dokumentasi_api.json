@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "3f4715ef-4a98-4bfc-afa4-481afd1627ee",
+		"name": "Guru-Tamu-18-01-2025",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30402736"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "get-all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/users"
+					},
+					"response": []
+				},
+				{
+					"name": "get-by-id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"farras\",\r\n    \"email\": \"farras@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}:{{port}}/users"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"mafu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}:{{port}}/users/3"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/users/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}:{{port}}"
+			},
+			"response": []
+		}
+	]
+}
