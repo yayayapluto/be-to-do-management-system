@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon ./bin/www",
+    "dev": "nodemon -w ./*.js ./*.js",
     "start": "node ./bin/www",
     "prepare": "husky"
   },
@@ -21,7 +21,20 @@
     "@eslint/js": "^9.19.0",
     "eslint": "^9.19.0",
     "globals": "^15.14.0",
-    "lint-staged": "^15.4.2",
-    "nodemon": "^3.1.9"
+    "husky": "^9.1.7",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
